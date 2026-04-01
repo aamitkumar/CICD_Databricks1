@@ -1,0 +1,5 @@
+targets:
+  dab:
+    presets:
+      name_prefix: (dab ${workspace.current_user.short_name})
+      source_linked_deployment: false

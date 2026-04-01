@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    pipeline_dlt_orders_pipeline:
+      name: dlt_pipeline_dab_demo
+      serverless: true
+      libraries:
+        - notebook:
+            path: /Workspace/Users/amitraj1505123@gmail.com/CICD_Databricks1/resources/notebooks/dab_demo_orders_demo.sql
+      schema: ${resources.schemas.bronze_dab.name}
+      development: true
+      catalog: ${resources.schemas.bronze_dab.catalog_name}
+
+
+

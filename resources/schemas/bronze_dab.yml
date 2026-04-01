@@ -1,0 +1,5 @@
+resources:
+  schemas:
+    bronze_dab:
+      name: bronze_dab
+      catalog_name: ${var.catalog}

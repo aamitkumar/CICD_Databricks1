@@ -1,0 +1,24 @@
+bundle:
+  name: DABdemo
+include:
+  - src/*.yml
+  - src/env/*.yml
+  - resources/jobs/*.yml
+  - resources/pipelines/*.yml
+  - resources/schemas/*.yml
+
+targets:
+  dab:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-7800d715-8921.cloud.databricks.com/editor/files/3084340248043243?o=4019158242388273
+  
+  qa:
+    default: false
+    workspace:
+      host: https://dbc-7800d715-8921.cloud.databricks.com/editor/files/3084340248043243?o=4019158242388273
+
+
+
+
