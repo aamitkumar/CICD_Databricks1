@@ -1,0 +1,12 @@
+resources:
+  jobs:
+    dba_demo_job:
+      name: dba_demo_job
+      tasks:
+        - task_key: dba_notebook
+          notebook_task:
+            notebook_path: /Workspace/Users/amitraj1505123@gmail.com/CICD_Databricks1/resources/notebooks/demo_repo_notebook.py
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
